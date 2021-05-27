@@ -1,1 +1,85 @@
-*{margin: 0; padding: 0;} 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body,html,.khoitt1{
+  height: 100%;
+  width: 100%;
+}
+a.navbar-brand {
+  padding: 0;
+}
+nav.navbar.navbar-light.bg-faded {
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  height: 100px;
+}
+a.nav-link {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #010101;
+}
+li.nav-item {
+  margin: 0 1rem;
+  padding: 0;
+}
+
+.menutop .container {
+  position: relative;
+  height: 100%;
+}
+.menutop ul.nav {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+/* =======Khoi thong tin 1======= */
+.khoitt1{
+
+  background: #e9585f;
+}
+.khoitt1::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #e4555b;
+
+}
+/* =======Responsive======= */
+@media (max-width: 576px) {
+  .menutop{
+    height: 140px;
+  }
+  li.nav-item {
+    float: none !important;
+    display: inline;
+  }
+
+  ul.nav.navbar-nav.float-xs-right {
+    float: none !important;
+    text-align: center;
+  }
+  li.nav-item {
+    display: inline !important;
+    margin: 0 0;
+  }
+  a.nav-link {
+    line-height: 27px;
+    display: inline !important;
+  }
+  a.navbar-brand {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  .menutop ul.nav {
+    position: relative;
+  }
+}
